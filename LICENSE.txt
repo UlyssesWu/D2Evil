@@ -1,0 +1,23 @@
+D2Evil License Agreement
+
+Author: UlyssesWu (wdwxy12345@gmail.com)
+Revision Date: 2019-09-22
+
+Applicable Software: D2Evil (Binaries)
+
+This Agreement is a legal contract made between you (hereinafter "the user") and UlyssesWu (wdwxy12345@gmail.com, https://github.com/UlyssesWu , hereinafter "the author") relating to the License of Software (as hereinafter defined).
+
+By downloading, installing or using the Software (as hereinafter defined), you are agreeing that you understand this Agreement and accept all of its terms. If you do not agree to the terms of this Agreement, you may not use the Software.
+
+0. Disclaimer
+None of the Software, the github repository, nor the author is affiliated with, or sponsored or authorized by, Live2D Inc. or its affiliates.
+The Software do not use any code from commercial softwares by Live2D Inc. or its affiliates.
+
+1. No Reverse Engineering
+The user may not reverse engineer, decompile, disassemble, or otherwise attempt to discover the Source Code of the Software's Binaries.
+
+2. Non Commercial
+The user may not use the Software for commercial purposes.
+
+3. Attribution
+The user must give appropriate credit, provide a link to the license, and indicate if changes were made.
