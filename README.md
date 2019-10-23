@@ -32,6 +32,14 @@ By downloading, installing or using D2Evil (binaries), you are agreeing that you
 
 D2Evil (source code) is licensed under **LGPL v3**.
 
+## Certification
+
+D2Evil is rewritten from my previous code **FreeLive**:
+
+![Ito Takuya's Approval](https://github.com/UlyssesWu/D2Evil/blob/master/img/Ito_Takuya_Approval.png)
+
+![Ito Takuya's Approval 2](https://github.com/UlyssesWu/D2Evil/blob/master/img/Ito_Takuya_Approval-2.png)
+
 ---
 
 by **Ulysses** (wdwxy12345@gmail.com) from Project AZUSA
