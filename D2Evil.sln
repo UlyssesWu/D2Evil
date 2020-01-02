@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2Evil", "D2Evil\D2Evil.csproj", "{0DCFA22E-B952-40BF-B7AB-02027E47D669}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2Evil.Kyubey", "D2Evil.Kyubey\D2Evil.Kyubey.csproj", "{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DCFA22E-B952-40BF-B7AB-02027E47D669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCFA22E-B952-40BF-B7AB-02027E47D669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCFA22E-B952-40BF-B7AB-02027E47D669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCFA22E-B952-40BF-B7AB-02027E47D669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E0A7103-1C0B-48BC-8BFF-EDD314F9A2DB}
+	EndGlobalSection
+EndGlobal

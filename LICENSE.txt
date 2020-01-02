@@ -1,7 +1,14 @@
-D2Evil License Agreement
+D2Evil Disclaimer
+None of this github repository, nor the author is affiliated with, or sponsored or authorized by, Live2D Inc. or its affiliates.
+
+D2Evil (source code) is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC-BY-NC-SA 4.0).
+Author: UlyssesWu (wdwxy12345@gmail.com)
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+D2Evil License Agreement (for Binaries)
 
 Author: UlyssesWu (wdwxy12345@gmail.com)
-Revision Date: 2019-09-22
+Revision Date: 2020-01-02
 
 Applicable Software: D2Evil (Binaries)
 
@@ -21,3 +28,4 @@ The user may not use the Software for commercial purposes.
 
 3. Attribution
 The user must give appropriate credit, provide a link to the license, and indicate if changes were made.
+

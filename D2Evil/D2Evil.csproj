@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Company>Project AZUSA</Company>
+    <Copyright>Copyright © Ulysses 2018-2020</Copyright>
+    <Version>1.0.0</Version>
+    <Description>Managed Waifu Model Tool Lib</Description>
+    <PackageTags></PackageTags>
+    <RepositoryUrl>https://github.com/UlyssesWu/D2Evil</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/UlyssesWu/D2Evil</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <Authors>UlyssesWu</Authors>
+    <PackageReleaseNotes>by Ulysses from Project AZUSA</PackageReleaseNotes>
+    <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Be.IO" Version="1.0.0-CI00003" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="D2Evil.LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
