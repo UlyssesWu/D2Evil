@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy &quot;bin\Debug\netstandard2.0\*.dll&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;&#xD;&#xA;copy &quot;bin\Debug\netstandard2.0\*.pdb&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;" />
+    <Exec Command="IF EXIST &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot; (copy &quot;bin\Debug\netstandard2.0\*.dll&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;)&#xD;&#xA;IF EXIST &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot; (copy &quot;bin\Debug\netstandard2.0\*.pdb&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;)" />
   </Target>
 
 </Project>
