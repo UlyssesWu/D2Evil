@@ -12,6 +12,14 @@ Parse moc/cmox files.
 
 Parse moc3 files. This lib is almost done, but I'm not going to release it for now.
 
+## Tools
+### Lincubator
+*Linqβ*
+
+A moc3 to cmo3 decompiler, powered by `D2Evil.Incubator`. (In Dev)
+
+![LIncubator Demo](https://github.com/UlyssesWu/D2Evil/blob/master/img/linqbeta-demo-1.png)
+
 
 ## LICENSE
 Disclaimer: 
