@@ -17,6 +17,7 @@ Parse moc3 files. This lib is almost done, but I'm not going to release it for n
 *Linqβ*
 
 A moc3 to cmo3 decompiler, powered by `D2Evil.Incubator`. (In Dev)
+It will probably NOT be open-sourced.
 
 ![LIncubator Demo](https://github.com/UlyssesWu/D2Evil/blob/master/img/linqbeta-demo-1.png)
 
