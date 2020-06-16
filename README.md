@@ -21,6 +21,7 @@ It will probably NOT be open-sourced.
 
 ![LIncubator Demo](https://github.com/UlyssesWu/D2Evil/blob/master/img/linqbeta-demo-1.png)
 
+For Lincubator generated project demos, see [Amizin](https://github.com/Dual-Vector-Foil/Amizin).
 
 ## LICENSE
 Disclaimer: 

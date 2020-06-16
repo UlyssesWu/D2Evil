@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Company>Project AZUSA</Company>
+    <Company>Dual-Vector Foil</Company>
     <Copyright>Copyright © Ulysses 2018-2020</Copyright>
     <Version>1.0.0</Version>
     <Description>Managed Waifu Model Tool Lib</Description>
@@ -12,7 +12,7 @@
     <PackageProjectUrl>https://github.com/UlyssesWu/D2Evil</PackageProjectUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
     <Authors>UlyssesWu</Authors>
-    <PackageReleaseNotes>by Ulysses from Project AZUSA</PackageReleaseNotes>
+    <PackageReleaseNotes>by Ulysses</PackageReleaseNotes>
     <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
   </PropertyGroup>
 

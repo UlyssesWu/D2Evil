@@ -8,7 +8,7 @@ namespace D2Evil
         {
             if (!useAlpha)
             {
-                color |= -0x1000000; //unchecked((int) 0xFF000000)
+                color |= -16777216; //unchecked((int) 0xFF000000)
             }
             this.Value = color;
         }

@@ -7,6 +7,7 @@ namespace D2Evil
         V2_1 = 0,
         V3_0 = 1,
         V3_1 = 2,
+        V4_0 = 3,
     }
 
     public enum L2CoordType

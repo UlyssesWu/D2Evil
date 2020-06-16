@@ -4,13 +4,13 @@
     <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <Version>1.0.0</Version>
     <Authors>UlyssesWu</Authors>
-    <Company>Project AZUSA</Company>
+    <Company>Dual-Vector Foil</Company>
     <Product>D2Evil</Product>
     <Copyright>Copyright © Ulysses 2018-2020</Copyright>
     <PackageTags></PackageTags>
     <PackageProjectUrl>https://github.com/UlyssesWu/D2Evil</PackageProjectUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageReleaseNotes>by Ulysses from Project AZUSA</PackageReleaseNotes>
+    <PackageReleaseNotes>by Ulysses</PackageReleaseNotes>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <Description>MOC Parser lib.</Description>
     <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="IF EXIST &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot; (copy &quot;bin\Debug\netstandard2.0\*.dll&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;)&#xD;&#xA;IF EXIST &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot; (copy &quot;bin\Debug\netstandard2.0\*.pdb&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;)" />
+    <Exec Command="copy &quot;bin\Debug\netstandard2.0\*.dll&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;&#xD;&#xA;copy &quot;bin\Debug\netstandard2.0\*.pdb&quot; &quot;D:\Documents\Unity\DualVectorFoil\Assets\Plugins&quot;" />
   </Target>
 
 </Project>
