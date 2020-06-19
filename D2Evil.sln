@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2Evil", "D2Evil\D2Evil.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2Evil.Kyubey", "D2Evil.Kyubey\D2Evil.Kyubey.csproj", "{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2Evil.Peacock", "D2Evil.Peacock\D2Evil.Peacock.csproj", "{37EB9258-FC21-4186-A4B3-FDFC1F3597B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F15C7DC-807D-4C72-B3EA-D020E0A4D64B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EB9258-FC21-4186-A4B3-FDFC1F3597B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EB9258-FC21-4186-A4B3-FDFC1F3597B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EB9258-FC21-4186-A4B3-FDFC1F3597B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EB9258-FC21-4186-A4B3-FDFC1F3597B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

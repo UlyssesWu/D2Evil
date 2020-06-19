@@ -6,6 +6,7 @@
     <Authors>UlyssesWu</Authors>
     <Company>Dual-Vector Foil</Company>
     <Product>D2Evil</Product>
+    <Description>Managed moc parse lib</Description>
     <Copyright>Copyright © Ulysses 2018-2020</Copyright>
     <PackageTags></PackageTags>
     <PackageProjectUrl>https://github.com/UlyssesWu/D2Evil</PackageProjectUrl>
