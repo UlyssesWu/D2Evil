@@ -23,6 +23,8 @@ It will probably NOT be open-sourced.
 
 For Lincubator generated project demos, see [Amizin](https://github.com/Dual-Vector-Foil/Amizin).
 
+If you have such needs, read [wiki](https://github.com/UlyssesWu/D2Evil/wiki/Lincubator) for more information.
+
 ## LICENSE
 Disclaimer: 
 
