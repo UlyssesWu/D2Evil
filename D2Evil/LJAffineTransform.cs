@@ -30,6 +30,7 @@ namespace FreeLive
         /**
          * The values of transformation matrix
          */
+
         private double _m00;
         private double _m10;
         private double _m01;

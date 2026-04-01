@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace D2Evil.Kyubey.Models
 {
-    internal class UvInfo
+    public class UvInfo
     {
         public bool Enabled;
 
@@ -24,7 +24,7 @@ namespace D2Evil.Kyubey.Models
         public bool Transposition;
     }
 
-    class Mesh : DrawableComponent
+    public class Mesh : DrawableComponent
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.DDTexture;
         public override ComponentType ComponentType => ComponentType.Mesh;
@@ -52,12 +52,12 @@ namespace D2Evil.Kyubey.Models
 
         public int ColorGroupNo { get; private set; } = -1;
 
-        internal Mesh(CubReader br)
+        internal Mesh(C2Reader br)
         {
             Read(br);
         }
 
-        public sealed override void Read(CubReader br)
+        public sealed override void Read(C2Reader br)
         {
             base.Read(br);
             TextureNo = br.ReadInt32();

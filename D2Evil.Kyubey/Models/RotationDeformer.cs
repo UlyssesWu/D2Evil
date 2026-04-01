@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace D2Evil.Kyubey.Models
 {
-    class RotationDeformer : DeformerData
+    public class RotationDeformer : DeformerData
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.RotationDeformer;
 
@@ -12,11 +12,11 @@ namespace D2Evil.Kyubey.Models
         public List<Affine> Affines { get; private set; } = new List<Affine>();
         public override C2DeformerType DeformerType => C2DeformerType.Rotation;
 
-        internal RotationDeformer(CubReader br)
+        internal RotationDeformer(C2Reader br)
         {
             Read(br);
         }
-        public sealed override void Read(CubReader br)
+        public sealed override void Read(C2Reader br)
         {
             base.Read(br);
             Pivots = br.ReadKnownObject<PivotList>();

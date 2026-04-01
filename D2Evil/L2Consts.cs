@@ -1,6 +1,6 @@
 ﻿namespace D2Evil
 {
-    static class L2Consts
+    public static class L2Consts
     {
         public const int VERTEX_TYPE_OFFSET0_STEP2 = 1;
 

@@ -12,7 +12,7 @@ namespace D2Evil.Kyubey.Models
     /// ModelImpl
     /// <para>Only Data</para>
     /// </summary>
-    public class ModelData : ICubSerializable
+    public class C2ModelData : IC2Serializable
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.ModelImpl;
 
@@ -21,16 +21,16 @@ namespace D2Evil.Kyubey.Models
         public int CanvasWidth { get; set; }
         public int CanvasHeight { get; set; }
 
-        public ModelData()
+        public C2ModelData()
         {
         }
 
-        internal ModelData(CubReader br)
+        internal C2ModelData(C2Reader br)
         {
             Read(br);
         }
 
-        public void Read(CubReader br)
+        public void Read(C2Reader br)
         {
             Params = br.ReadKnownObject<ParamList>();
             if (br.ReadObject() is List<object> partDatas)
@@ -42,7 +42,7 @@ namespace D2Evil.Kyubey.Models
             CanvasHeight = br.ReadInt32();
         }
 
-        public static ModelData LoadFromStream(Stream input)
+        public static C2ModelData LoadFromStream(Stream input)
         {
             var sigBytes = new byte[3];
             input.Read(sigBytes, 0, 3);
@@ -51,15 +51,15 @@ namespace D2Evil.Kyubey.Models
                 throw new BadImageFormatException("Not a valid MOC file.");
             }
 
-            CubReader br = new CubReader(input);
+            C2Reader br = new C2Reader(input);
             int version = br.ReadByte();
-            if (version > CubReader.SupportVersion)
+            if (version > C2Reader.SupportVersion)
             {
                 Debug.WriteLine($"Target version {version} is unsupported.");
             }
 
             br.FormatVersion = version;
-            return br.ReadKnownObject<ModelData>();
+            return br.ReadKnownObject<C2ModelData>();
         }
     }
 }

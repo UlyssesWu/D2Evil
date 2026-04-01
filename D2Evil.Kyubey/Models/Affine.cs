@@ -1,11 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using FreeLive;
+using Newtonsoft.Json;
 
 namespace D2Evil.Kyubey.Models
 {
     /// <summary>
     /// Rotation Desc
     /// </summary>
-    internal class Affine : ICubSerializable
+    public class Affine : IC2Serializable
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.Affine;
 
@@ -44,12 +45,12 @@ namespace D2Evil.Kyubey.Models
             ReflectY = a.ReflectY;
         }
 
-        internal Affine(CubReader br)
+        internal Affine(C2Reader br)
         {
             Read(br);
         }
 
-        public void Read(CubReader br)
+        public void Read(C2Reader br)
         {
             OriginX = br.ReadSingle();
             OriginY = br.ReadSingle();
@@ -63,5 +64,7 @@ namespace D2Evil.Kyubey.Models
             }
 
         }
+
+        //TODO: ToAffineTransform
     }
 }

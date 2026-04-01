@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace D2Evil.Kyubey.Models
 {
-    class CurvedSurfaceDeformer : DeformerData
+    public class CurvedSurfaceDeformer : DeformerData
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.CurvedSurfaceDeformer;
 
@@ -14,12 +14,12 @@ namespace D2Evil.Kyubey.Models
         public List<float[]> PivotPoints { get; private set; }
         public override C2DeformerType DeformerType => C2DeformerType.CurvedSurface;
 
-        internal CurvedSurfaceDeformer(CubReader br)
+        internal CurvedSurfaceDeformer(C2Reader br)
         {
             Read(br);
         }
 
-        public sealed override void Read(CubReader br)
+        public sealed override void Read(C2Reader br)
         {
             base.Read(br);
             Row = br.ReadInt32();

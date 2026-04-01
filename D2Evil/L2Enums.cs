@@ -6,8 +6,13 @@ namespace D2Evil
     {
         V2_1 = 0,
         V3_0 = 1,
-        V3_1 = 2,
+        /// <summary>
+        /// 3.03
+        /// </summary>
+        V3_03 = 2,
         V4_0 = 3,
+        V4_02 = 4,
+        V5_0 = 5,
     }
 
     public enum L2CoordType
@@ -15,6 +20,12 @@ namespace D2Evil
         BasicCoord,
         DeformerLocal,
         Canvas,
+    }
+
+    public enum L2ParameterType
+    {
+        Normal,
+        MorphTarget
     }
 
     public enum L2ColorCompositionType
@@ -71,5 +82,15 @@ namespace D2Evil
         ParamPivots = 67,
         PivotManager = 66,
         CurvedSurfaceDeformer = 65,
+    }
+
+    public enum L2TextureState
+    {
+        MODEL_IMAGE = 0,
+        TEXTURE_ATLAS = 1,
+        NO_TEXTURE_ATLAS = 2,
+        NO_TEXTURE_INPUT_EXTENSION_ERROR = 3,
+        NO_MODEL_IMAGE_ERROR = 4,
+        UNKNOWN = 5
     }
 }

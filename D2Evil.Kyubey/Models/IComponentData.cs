@@ -11,7 +11,7 @@
     /// <summary>
     /// Component (IDrawData)
     /// </summary>
-    public interface IComponentData : ICubSerializable, ITargetStringIndexed
+    public interface IComponentData : IC2Serializable, ITargetStringIndexed
     {
         ComponentType ComponentType { get; }
     }

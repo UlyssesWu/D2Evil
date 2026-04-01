@@ -6,7 +6,7 @@ namespace D2Evil.Kyubey.Models
     /// <summary>
     /// ParamPivots
     /// </summary>
-    public class Pivot : ICubSerializable, IStringIndexed
+    public class Pivot : IC2Serializable, IStringIndexed
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.ParamPivots;
 
@@ -14,7 +14,7 @@ namespace D2Evil.Kyubey.Models
         public L2ObjType IdType => L2ObjType.ParamID;
         public int Count => Values.Count;
         public List<float> Values { get; private set; } = new List<float>();
-        internal int IndexInitVersion { get; set; } = -1;
+        public int IndexInitVersion { get; set; } = -1;
         public int CurrentPivotIndex { get; set; }
         public float CurrentValue { get; set; }
 
@@ -24,12 +24,12 @@ namespace D2Evil.Kyubey.Models
             set => Values[i] = value;
         }
 
-        internal Pivot(CubReader br)
+        internal Pivot(C2Reader br)
         {
             Read(br);
         }
 
-        public void Read(CubReader br)
+        public void Read(C2Reader br)
         {
             ID = br.ReadIdString();
             var count = br.ReadInt32();

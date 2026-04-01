@@ -13,7 +13,7 @@
     /// <summary>
     /// Deformer (IBaseData)
     /// </summary>
-    public abstract class DeformerData : ICubSerializable, ITargetStringIndexed
+    public abstract class DeformerData : IC2Serializable, ITargetStringIndexed
     {
         public string ID { get; private set; }
         public string TargetID { get; private set; }
@@ -23,7 +23,7 @@
 
         public bool NeedTransform => TargetID != null && TargetID != L2Consts.DST_BASE_ID;
 
-        public virtual void Read(CubReader br)
+        public virtual void Read(C2Reader br)
         {
             ID = br.ReadIdString();
             TargetID = br.ReadIdString();
@@ -33,7 +33,7 @@
         /// Post Read 
         /// </summary>
         /// <param name="br"></param>
-        protected void ReadOpacity(CubReader br)
+        protected void ReadOpacity(C2Reader br)
         {
             if (br.FormatVersion >= 10)
             {

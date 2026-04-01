@@ -6,7 +6,7 @@ using D2Evil.Kyubey.Models;
 
 namespace D2Evil.Kyubey
 {
-    public class CubMotion
+    public class C2Motion
     {
         #region MotionBase
 
@@ -22,9 +22,9 @@ namespace D2Evil.Kyubey
         public int DurationMs { get; set; }
         public int LoopDurationMs { get; set; }
         private int _maxLength = 0;
-        public static CubMotion Load(string[] lines)
+        public static C2Motion Load(string[] lines)
         {
-            CubMotion motion = new CubMotion();
+            C2Motion motion = new C2Motion();
             for (var i = 0; i < lines.Length; i++)
             {
                 lines[i] = lines[i].Trim();

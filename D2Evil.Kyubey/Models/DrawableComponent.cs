@@ -19,7 +19,7 @@ namespace D2Evil.Kyubey.Models
         public int[] PivotDrawOrder { get; set; }
         public float[] PivotOpacity { get; set; }
         public List<string> ClipIDs { get; set; }
-        public virtual void Read(CubReader br)
+        public virtual void Read(C2Reader br)
         {
             ID = br.ReadIdString();
             TargetID = br.ReadIdString();

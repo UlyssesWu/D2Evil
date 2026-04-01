@@ -5,7 +5,7 @@ using D2Evil.Kyubey.Models;
 
 namespace D2Evil.Kyubey
 {
-    public class CubReader : L2BinaryReader
+    public class C2Reader : L2BinaryReader
     {
         //use IL2Object or not? string / null
 
@@ -13,7 +13,7 @@ namespace D2Evil.Kyubey
 
         public List<object> Objects { get; } = new List<object>();
 
-        internal CubReader(Stream s) : base(s, true)
+        internal C2Reader(Stream s) : base(s, true)
         {
         }
 
@@ -154,7 +154,7 @@ namespace D2Evil.Kyubey
             return obj;
         }
 
-        private ICubSerializable ReadKnownTypeObject(int objType)
+        private IC2Serializable ReadKnownTypeObject(int objType)
         {
             switch (objType)
             {
@@ -179,7 +179,7 @@ namespace D2Evil.Kyubey
                 case (int) L2ObjType.Affine:
                     return new Affine(this);
                 case (int) L2ObjType.ModelImpl:
-                    return new ModelData(this);
+                    return new C2ModelData(this);
             }
 #if DEBUG
             throw new NotImplementedException($"Type {objType} is unknown");
@@ -187,7 +187,7 @@ namespace D2Evil.Kyubey
             return null; //TODO:
         }
 
-        public T ReadKnownObject<T>() where T : ICubSerializable, new()
+        public T ReadKnownObject<T>() where T : IC2Serializable, new()
         {
             var t = ReadNumber();
             if (t == (int) L2ObjType.ObjectRef)

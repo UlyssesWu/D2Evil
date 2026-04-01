@@ -5,7 +5,7 @@ namespace D2Evil.Kyubey.Models
     /// <summary>
     /// ParamDefF
     /// </summary>
-    public class Param : ICubSerializable, IStringIndexed
+    public class Param : IC2Serializable, IStringIndexed
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.ParamDefF;
 
@@ -31,12 +31,12 @@ namespace D2Evil.Kyubey.Models
             this.DefaultValue = defaultValue;
         }
 
-        internal Param(CubReader br)
+        internal Param(C2Reader br)
         {
             Read(br);
         }
 
-        public void Read(CubReader br)
+        public void Read(C2Reader br)
         {
             MinValue = br.ReadSingle();
             MaxValue = br.ReadSingle();

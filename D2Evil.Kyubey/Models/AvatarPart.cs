@@ -19,7 +19,7 @@ namespace D2Evil.Kyubey.Models
     /// <summary>
     /// Paper Doll
     /// </summary>
-    class AvatarPart : ICubSerializable, IStringIndexed
+    class AvatarPart : IC2Serializable, IStringIndexed
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.AvatarPartsItem;
 
@@ -31,12 +31,12 @@ namespace D2Evil.Kyubey.Models
         public List<IComponentData> Components { get; private set; }
         public List<DeformerData> Deformers { get; private set; }
 
-        internal AvatarPart(CubReader br)
+        internal AvatarPart(C2Reader br)
         {
             Read(br);
         }
 
-        public void Read(CubReader br)
+        public void Read(C2Reader br)
         {
             ID = br.ReadIdString();
             if (br.ReadObject() is List<object> drawDatas)

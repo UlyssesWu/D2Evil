@@ -7,7 +7,7 @@ namespace D2Evil.Kyubey.Models
     /// <summary>
     /// PartsData
     /// </summary>
-    public class Part : ICubSerializable, IStringIndexed
+    public class Part : IC2Serializable, IStringIndexed
     {
         [JsonProperty] public const L2ObjType Type = L2ObjType.PartsData;
 
@@ -29,12 +29,12 @@ namespace D2Evil.Kyubey.Models
         /// </summary>
         public List<IComponentData> Components { get; private set; }
 
-        internal Part(CubReader br)
+        internal Part(C2Reader br)
         {
             Read(br);
         }
 
-        public void Read(CubReader br)
+        public void Read(C2Reader br)
         {
             var state = br.Read8Bit();
             Locked = state[0] == '1';
