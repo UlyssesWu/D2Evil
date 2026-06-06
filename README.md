@@ -26,6 +26,13 @@ For Lincubator generated project demos, see [Amizin](https://github.com/Dual-Vec
 
 If you have such needs, read [wiki](https://github.com/UlyssesWu/D2Evil/wiki/Lincubator) for more information.
 
+### LiveMote
+
+An E-mote model to Live2D model converter. Built upon Lincubator and **[FreeMote](https://github.com/UlyssesWu/FreeMote)**.
+It's not open source.
+
+![LiveMote Demo](https://github.com/UlyssesWu/D2Evil/blob/master/img/LiveMote-demo.png)
+
 ## LICENSE
 Disclaimer: 
 
