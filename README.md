@@ -33,6 +33,8 @@ It's not open source.
 
 ![LiveMote Demo](https://github.com/UlyssesWu/D2Evil/blob/master/img/LiveMote-demo.png)
 
+A sample can be downloaded [here](https://github.com/Dual-Vector-Foil/Amizin/releases/download/0.0.1-demo/LiveMote-Lincubator-chocola.zip). No re-distribute.
+
 ## LICENSE
 Disclaimer: 
 
